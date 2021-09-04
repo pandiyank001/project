@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 90vh;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.header ul {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+
+  margin: 0 0 0 30px;
+}
+
+.header ul li {
+  list-style-type: none;
+}
+
+.header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.header h2 {
+  flex: 1;
+  color: white;
+}
+
+.header2 {
+  background-color: rgb(92, 92, 92);
+}
+
+.about {
+  margin-top: 6%;
+
+  color: white;
+  padding: 30px;
+  margin: 6% 2%;
+  box-sizing: content-box;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: inline-block;
+  backdrop-filter: blur(15px);
+  box-shadow: 2px 2px 5px white;
+}
+
+.about p {
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: monospace;
+}
+
+.about h2 {
+  font-size: 70px;
+}
+
+.content {
+  text-align: center;
+  width: 60%;
+  margin: 2% auto;
+}
+
+.content h2,
+h3 {
+  margin: 2% 0;
+}
+
+.content p {
+  margin: 2%;
+  font-size: 20px;
+}
+
+.bg img {
+  width: 400px;
+}
+
+.pics {
+  display: flex;
+  width: 70%;
+  margin: 2% auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pics .bg {
+  margin: 2% 0;
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: orange;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.bg img:hover {
+  background-color: rgba(255, 255, 255, 1);
+  /* filter: blur(1px); */
+  transform: translateY(5px);
+  transition: all 0.5s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 15px rgba(0, 0, 0, 0.9);
+  filter: grayscale(0.5);
+  filter: contrast(0.6);
+}
+
+.bg:hover .name {
+  opacity: 1;
+}
